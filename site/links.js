@@ -1,0 +1,42 @@
+window.PORTAL_LINKS = [
+  {
+    id: "fn",
+    name: "飞牛 NAS",
+    description: "文件管理与系统服务",
+    href: "https://fn.myfu.cn:7999",
+    icon: "storage",
+    tone: "blue",
+  },
+  {
+    id: "v",
+    name: "飞牛影视",
+    description: "媒体库与影片播放",
+    href: "https://v.myfu.cn:7999",
+    icon: "play",
+    tone: "violet",
+  },
+  {
+    id: "webdav",
+    name: "WebDAV",
+    description: "文件访问与播放器连接",
+    href: "https://webdav.myfu.cn:7999",
+    icon: "folder",
+    tone: "orange",
+  },
+  {
+    id: "vd",
+    name: "VideoDock",
+    description: "视频服务与媒体工具",
+    href: "https://vd.myfu.cn:7999",
+    icon: "screen",
+    tone: "green",
+  },
+  {
+    id: "gi",
+    name: "GitHub 中文",
+    description: "代码与项目浏览",
+    href: "https://gi.myfu.cn:7999",
+    icon: "code",
+    tone: "slate",
+  },
+];

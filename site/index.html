@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="统一访问 NAS 和自建服务" />
+    <meta name="theme-color" content="#f5f5f7" />
+    <title>我的服务中心</title>
+    <link rel="icon" href="/assets/portal-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/links.js" defer></script>
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <main class="shell">
+      <header class="hero">
+        <div class="brand-mark" aria-hidden="true">
+          <img src="/assets/portal-mark.svg" alt="" />
+        </div>
+        <p class="eyebrow">PERSONAL CLOUD</p>
+        <h1 id="portal-title">我的服务中心<span class="hero-dot">.</span></h1>
+        <p id="portal-subtitle" class="hero-copy">一个入口，访问你的 NAS 与自建服务。</p>
+        <a class="admin-link" href="/admin">管理员设置</a>
+      </header>
+
+      <section class="service-section" aria-labelledby="service-heading">
+        <div class="section-heading">
+          <h2 id="service-heading">服务</h2>
+          <span id="service-count" class="service-count" aria-live="polite"></span>
+        </div>
+        <div id="service-grid" class="service-grid"></div>
+        <p id="empty-state" class="empty-state" hidden>暂时没有可用服务。</p>
+      </section>
+
+      <footer class="footer">
+        <span>Private services, one quiet place.</span>
+        <span class="footer-separator" aria-hidden="true">·</span>
+        <span id="footer-year"></span>
+      </footer>
+    </main>
+  </body>
+</html>

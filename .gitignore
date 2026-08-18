@@ -1,0 +1,9 @@
+﻿.env
+.env.*
+!.env.example
+data/*
+!data/.gitkeep
+*.tar
+deploy-*
+run-*
+node_modules/

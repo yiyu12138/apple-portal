@@ -1,0 +1,27 @@
+services:
+  apple-portal:
+    build: .
+    image: local/apple-portal:1.1.0
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:18080:8080"
+    environment:
+      PORTAL_ADMIN_PASSWORD: ${PORTAL_ADMIN_PASSWORD:?create a local .env with a strong password}
+    volumes:
+      - portal-data:/app/data
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=16m
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    init: true
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:8080/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  portal-data:

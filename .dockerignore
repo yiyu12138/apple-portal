@@ -1,0 +1,24 @@
+# Local tooling and editor files
+.git
+.gitignore
+.agents
+.zcode
+node_modules
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Secrets and local environment files
+.env
+.env.*
+*.key
+*.pem
+
+# Runtime data and local backups
+data/*
+auth.json
+*.db
+*.sqlite
+*.sqlite3
+sessions/*
+backups/*
