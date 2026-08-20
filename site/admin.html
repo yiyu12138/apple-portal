@@ -29,7 +29,7 @@
         <p class="panel-copy">此密码只用于修改门户配置，不是 NAS、WebDAV 或飞牛影视的业务密码。</p>
         <form id="login-form" class="stack-form">
           <label for="login-password">管理员密码</label>
-          <input id="login-password" name="password" type="password" autocomplete="current-password" minlength="12" required />
+          <input id="login-password" name="password" type="password" autocomplete="current-password" minlength="8" required />
           <p id="login-error" class="form-error" role="alert" hidden></p>
           <button class="button button-primary" type="submit">登录设置页</button>
         </form>
@@ -71,12 +71,12 @@
           </div>
           <form id="password-form" class="stack-form">
             <label for="current-password">当前密码</label>
-            <input id="current-password" type="password" autocomplete="current-password" minlength="12" required />
+            <input id="current-password" type="password" autocomplete="current-password" minlength="8" required />
             <label for="new-password">新密码</label>
-            <input id="new-password" type="password" autocomplete="new-password" minlength="12" required />
+            <input id="new-password" type="password" autocomplete="new-password" minlength="8" required />
             <label for="confirm-password">确认新密码</label>
-            <input id="confirm-password" type="password" autocomplete="new-password" minlength="12" required />
-            <p class="field-hint">至少 12 个字符。修改成功后，当前登录会话会立即失效。</p>
+            <input id="confirm-password" type="password" autocomplete="new-password" minlength="8" required />
+            <p class="field-hint">至少 8 个字符。修改成功后，当前登录会话会立即失效。</p>
             <p id="password-state" class="form-error" role="alert" hidden></p>
             <button class="button button-secondary" type="submit">更新密码</button>
           </form>
