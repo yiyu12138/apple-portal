@@ -15,7 +15,7 @@ const COOKIE_NAME = "portal_admin";
 const COOKIE_SECURE = process.env.PORTAL_COOKIE_SECURE !== "false";
 const SESSION_IDLE_MS = 30 * 60 * 1000;
 const SESSION_ABSOLUTE_MS = 8 * 60 * 60 * 1000;
-const PASSWORD_MIN = 12;
+const PASSWORD_MIN = 8;
 const MAX_BODY_BYTES = 256 * 1024;
 const scryptAsync = promisify(crypto.scrypt);
 

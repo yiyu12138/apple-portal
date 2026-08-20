@@ -262,7 +262,7 @@
     const newPassword = document.querySelector("#new-password").value;
     const confirmPassword = document.querySelector("#confirm-password").value;
     if (newPassword !== confirmPassword) return setError(passwordState, "两次输入的新密码不一致。");
-    if (newPassword.length < 12) return setError(passwordState, "新密码至少需要 12 个字符。");
+    if (newPassword.length < 8) return setError(passwordState, "新密码至少需要 8 个字符。");
     if (!window.confirm("修改密码后当前会话会立即退出，确定继续吗？")) return;
     try {
       await request("/api/admin/password", requireCsrf({ method: "POST", body: JSON.stringify({ currentPassword, newPassword, confirmPassword }) }));
